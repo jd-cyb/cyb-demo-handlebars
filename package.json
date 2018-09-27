@@ -1,0 +1,36 @@
+{
+  "name": "cyb-mockserver-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {},
+  "repository": {},
+  "keywords": [
+    "CYB",
+    "塞伯坦",
+    "前端工程",
+    "前端模块化",
+    "前端自动化"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "fezmock": "^1.2.3",
+    "mockjs": "^1.0.1-beta3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "handlebars": "^4.0.12",
+    "handlebars-loader": "^1.7.0",
+    "http-proxy-middleware": "^0.19.0"
+  },
+  "author": "CYB前端小组",
+  "license": "MIT",
+  "bugs": {},
+  "homepage": "https://github.com/jd-cyb/cyb-cli#readme"
+}
