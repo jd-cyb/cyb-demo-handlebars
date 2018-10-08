@@ -26,6 +26,6 @@ cyb dev
 
 ```
 
-> 本示例使用bower管理第三方框架库，请先全局安装bower `npm install -g bower`。
+> 本示例使用[bower](https://bower.io/)管理第三方框架库，请先全局安装bower `npm install -g bower`。
 
-> 本示例使用cybmock模拟服务器API数据，请先全局安装cybmock `npm install -g cybmock`。
+> 本示例使用[cybmock](https://github.com/jd-cyb/cybmock)模拟服务器API数据，请先全局安装cybmock `npm install -g cybmock`。
