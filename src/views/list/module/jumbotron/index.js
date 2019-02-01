@@ -1,9 +1,8 @@
 import $ from 'jquery'
 import temp from './index.hbs'
-import Service from './service'
+import {list} from 'views/public/api'
 
-export default ($box = $("body")) => {
-  Service.renderData().then((data) => {
-    $box.html(temp(data))
-  })
+export default async ($box = $("body")) => {
+  const res = await list()
+  $box.html(temp(res.data.jumbotron))
 }

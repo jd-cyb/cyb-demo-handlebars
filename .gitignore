@@ -9,3 +9,5 @@ dist
 test
 tmp
 fez-*
+yarn-error.log
+yarn.lock

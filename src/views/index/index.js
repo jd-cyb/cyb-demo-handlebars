@@ -4,8 +4,17 @@ import footer from 'views/public/module/footer'
 import jumbotron from './module/jumbotron'
 import fezdesc from './module/fezdesc'
 
-header($("#js-header"))
-footer($("#js-footer"))
-jumbotron($("#js-jumbotron"))
-fezdesc($("#js-fezdesc"))
+import { common } from 'views/public/api'
+import { index } from 'views/public/api'
+
+(async () => {
+  const resCommon = await common()
+  const resIndex = await index()
+
+  await header($("#js-header"),resCommon)
+  await footer($("#js-footer"),resCommon)
+
+  await jumbotron($("#js-jumbotron"),resIndex)
+  await fezdesc($("#js-fezdesc"),resIndex)
+})()
 

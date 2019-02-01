@@ -1,14 +1,12 @@
 import temp from './header.hbs'
-import Service from './service'
 
-export default ($box = $("body")) => {
-  let tempData = {}
-  Promise.all([
-    Service.siteName(),
-    Service.navList()
-  ]).then((data) => {
-    tempData.sysName = data[0]
-    tempData.nav = data[1]
-    $box.html(temp(tempData))
-  })
+import {navList,siteName} from './service'
+
+export default async ($box = $("body"),res) => {
+
+  const sysName = await siteName(res)
+
+  const nav = await navList(res)
+
+  $box.html(temp({sysName:sysName,nav:nav}))
 }

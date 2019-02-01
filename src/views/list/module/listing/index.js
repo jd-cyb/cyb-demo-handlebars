@@ -1,9 +1,9 @@
 import $ from 'jquery'
 import temp from './index.hbs'
-import Service from './service'
+import {frames} from 'views/public/api'
 
-export default ($box = $("body")) => {
-  Service.renderData().then((data) => {
-    $box.html(temp(data))
-  })
+export default async ($box = $("body"),data) => {
+  const res = await frames()
+  console.log(res)
+  $box.html(temp(res.data))
 }
